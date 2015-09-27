@@ -1,0 +1,523 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        
+        
+           <!-- *****************forhome************** -->
+        <action name="login1" class="Home.login">
+            <result name="input">/home.jsp</result>
+            <result name="success">/home/user.jsp</result>  
+        </action> 
+        
+        <action name="Appstatus" class="Home.Appstatus">
+            <result name="input">/home.jsp</result>
+            <result name="success">/WEB-INF/home/appstatus.jsp</result>  
+            <result name="failure">/WEB-INF/home/Appfail.jsp</result>
+        </action>
+        
+        <action name="appback" class="Home.Back">
+            <result name="input">/WEB-INF/home/appstatus.jsp</result>
+            <result name="success">/home.jsp</result>  
+        </action>
+        
+        <action name="appbackfail" method="appbackfail" class="Home.Back">
+            <result name="input">/WEB-INF/home/Appfail.jsp</result>
+            <result name="appbackfail">/home.jsp</result>  
+        </action>
+        
+        <action name="Reach" class="Home.Reach">
+            <result name="input">/home.jsp</result>
+            <result name="success">/WEB-INF/home/reachsuccess.jsp</result>   
+        </action>
+        
+        <action name="clear" method="clearall" class="Home.Reach">
+            <result name="input">/home.jsp</result>
+            <result name="failure">/home.jsp</result>       
+        </action>
+        
+        <action name="officiallog" class="Home.Officiallog">
+            <result name="input">/offLogin.jsp</result>
+            <result name="admin">/WEB-INF/Admin/Admin.jsp</result>
+            <result name="manager">/WEB-INF/manager/manager.jsp</result>   
+            <result name="employee">/WEB-INF/employee/employee.jsp</result>
+        </action>
+            
+        <action name="offback" method="offBack" class="Home.Back">
+            <result name="input">/offlogin.jsp</result>
+            <result name="offback">/home.jsp</result>       
+        </action>
+        
+        <action name="register" class="Home.register">   
+            <result name="input">/register.jsp</result>
+            <result name="success">/WEB-INF/home/registerform1.jsp</result>
+        </action>
+        
+        <action name="regisback" method="regisback" class="Home.Back">
+            <result name="input">/register.jsp</result>
+            <result name="regisback">/home.jsp</result>
+        </action>
+        
+        <action name="register1" class="Home.registerform">
+            <result name="input">/WEB-INF/home/registerform1.jsp</result>
+            <result name="success">/WEB-INF/home/regisconfirm.jsp</result>
+        </action>
+        
+       <action name="regisback1" method="regisback1" class="Home.Back">
+            <result name="input">/WEB-INF/home/registerform1.jsp</result>
+            <result name="regisback1">/home.jsp</result>
+       </action>
+        
+        
+        
+        
+         
+           <!-- ************for manager********** -->
+           
+       <action name="passviewman" method="passviewman" class="manage.Clickme">
+            <result name="input">/WEB-INF/manager/manager.jsp</result>
+            <result name="passviewman">/WEB-INF/manager/forpasswordman.jsp</result>
+       </action>
+       
+       <action name="forpassword"  class="manage.forpassword">
+            <result name="input">/WEB-INF/manager/forpasswordman.jsp</result>
+            <result name="success">/WEB-INF/manager/insupdel.jsp</result>
+       </action>
+       
+       <action name="passwordbackman" method="passwordbackman" class="manage.Clickme">
+            <result name="input">/WEB-INF/manager/forpasswordman.jsp</result>
+            <result name="passwordbackman">/WEB-INF/manager/manager.jsp</result>
+       </action>
+       
+       <action name="*Clickme" class="manage.Clickme">
+            <result name="input">/WEB-INF/manager/manager.jsp</result>
+            <result name="success">/WEB-INF/manager/toappreq.jsp</result>
+       </action>
+
+       <action name="back" method="back" class="manage.Clickme">
+            <result name="input">/WEB-INF/manager/toappreq.jsp</result>
+            <result name="back">/WEB-INF/manager/manager.jsp</result>
+       </action>
+       
+       <action name="appnoinfo" class="manage.appnoinfo">
+            <result name="input">/WEB-INF/manager/toappreq.jsp</result>
+            <result name="appnoinfo">/WEB-INF/manager/Viewreqinfo.jsp</result>
+       </action>
+       
+       <action name="Clickmeback"  class="manage.Clickme">
+            <result name="input">/WEB-INF/manager/Viewreqinfo.jsp</result>
+            <result name="success">/WEB-INF/manager/toappreq.jsp</result>
+       </action>
+       
+       <action name="internalinfo" class="manage.InternalInfo">
+            <result name="input">/WEB-INF/manager/Viewreqinfo.jsp</result>
+            <result name="success">/WEB-INF/manager/internalinfo.jsp</result>
+       </action>
+       
+       <action name="internalback" method="internalback" class="manage.InternalInfo">
+             <result name="input">/WEB-INF/manager/internalinfo.jsp</result>
+             <result name="internalback">/WEB-INF/manager/Viewreqinfo.jsp</result>
+       </action>
+       
+       <action name="externalinfo" class="manage.ExternalInfo">
+             <result name="input">/WEB-INF/manager/Viewreqinfo.jsp</result>
+             <result name="success">/WEB-INF/manager/externalinfo.jsp</result>
+       </action>
+       
+       <action name="externalback" method="externalback" class="manage.ExternalInfo">
+             <result name="input">/WEB-INF/manager/externalinfo.jsp</result>
+             <result name="externalback">/WEB-INF/manager/Viewreqinfo.jsp</result>
+       </action>
+       
+       <action name="Generate" class="manage.Generate">
+             <result name="input">/WEB-INF/manager/Viewreqinfo.jsp</result>
+             <result name="failure">/WEB-INF/manager/hit.jsp</result>
+       </action>
+       
+       <action name="generateback" method="generateback" class="manage.Generate">
+             <result name="input">/WEB-INF/manager/hit.jsp</result>
+             <result name="generateback">/WEB-INF/manager/Viewreqinfo.jsp</result>
+       </action>
+       
+       <action name="Datatoadmin" class="manage.Datatoadmin">
+             <result name="input">/WEB-INF/manager/hit.jsp</result>
+             <result name="success">/WEB-INF/manager/insupdel.jsp</result>
+       </action>
+       
+       <action name="reject" method="reject" class="manage.Datatoadmin">
+             <result name="input">/WEB-INF/manager/hit.jsp</result>
+             <result name="reject">/WEB-INF/manager/toappreq.jsp</result>
+       </action>
+         
+       <action name="view1"  class="manage.ManagerView">
+             <result name="input">/WEB-INF/manager/manager.jsp</result>
+             <result name="view">/WEB-INF/manager/ManageView.jsp</result>
+       </action>
+       
+       <action name="manageviewback" method="manageviewback" class="manage.ManagerView">
+             <result name="input">/WEB-INF/manager/ManageView.jsp</result>
+             <result name="manageviewback">/WEB-INF/manager/manager.jsp</result>
+       </action>
+       
+       <action name="managereditview" method="managereditview"  class="manage.Clickme">
+             <result name="input">/WEB-INF/manager/manager.jsp</result>
+             <result name="managereditview">/WEB-INF/manager/Manageeditview.jsp</result>
+       </action>
+       
+       <action name="manageedit"  class="manage.ManagerEdit">
+             <result name="input">/WEB-INF/manager/Manageeditview.jsp</result>
+             <result name="manageedit">/WEB-INF/manager/Manageedit.jsp</result>
+       </action>
+       
+       <action name="editviewback" method="editviewback" class="manage.Clickme">
+             <result name="input">/WEB-INF/manager/Manageeditview.jsp</result>
+             <result name="editviewback">/WEB-INF/manager/manager.jsp</result>
+       </action>
+       
+       <action name="manageinsert"   class="manage.Managerinsert">
+             <result name="input">/WEB-INF/manager/Manageeditview.jsp</result>
+             <result name="manageinsert">/WEB-INF/manager/Manageinsert.jsp</result>
+       </action>
+       
+       <action name="manageinsertback"  method="manageinsertback" class="manage.Clickme">
+             <result name="input">/WEB-INF/manager/Manageinsert.jsp</result>
+             <result name="manageinsertback">/WEB-INF/manager/manager.jsp</result>
+       </action>
+       
+       <action name="empinsert"  class="manage.Empaccountinsert">
+             <result name="input">/WEB-INF/manager/Manageinsert.jsp</result>
+             <result name="empinsert">/WEB-INF/manager/insupdel.jsp</result>
+       </action>
+       
+       <action name="empupdate"  class="manage.Empaccountup">
+             <result name="input">/WEB-INF/manager/Manageedit.jsp</result>
+             <result name="empupdate">/WEB-INF/manager/insupdel.jsp</result>
+       </action>
+       
+       <action name="empdelete"  method="empdelete" class="manage.Empaccountup">
+             <result name="input">/WEB-INF/manager/Manageedit.jsp</result>
+             <result name="empdelete">/WEB-INF/manager/insupdel.jsp</result>
+       </action>
+       
+       <action name="Goback"  method="goback" class="manage.Clickme">
+             <result name="input">/WEB-INF/manager/insupdel.jsp</result>
+             <result name="goback">/WEB-INF/manager/manager.jsp</result>
+       </action>
+       
+       <action name="empupback"  method="empupback" class="manage.Clickme">
+             <result name="input">/WEB-INF/manager/Manageedit.jsp</result>
+             <result name="empupback">/WEB-INF/manager/manager.jsp</result>
+       </action>
+       
+       <action name="logout"   class="manage.Logout">
+             <result name="input">/WEB-INF/manager/manager.jsp</result>
+             <result name="success">/WEB-INF/manager/logout.jsp</result>
+       </action>
+             
+             
+             
+             
+             
+             
+         <!-- *********for admin********** -->
+       <action name="adminapprovephoto"  method="adminapprovephoto" class="admin.mainclick">
+             <result name="input">/WEB-INF/Admin/Admin.jsp</result>
+             <result name="adminapprovephoto">/WEB-INF/Admin/apprequest.jsp</result>
+       </action>
+       
+       <action name="apprequestback" method="apprequestback" class="admin.mainclick">
+             <result name="input">/WEB-INF/Admin/apprequest.jsp</result>
+             <result name="apprequestback">/WEB-INF/Admin/Admin.jsp</result>
+       </action>
+       
+       <action name="toacceptpage"   class="admin.toacceptpage">
+             <result name="input">/WEB-INF/Admin/apprequest.jsp</result>
+             <result name="toaccept">/WEB-INF/Admin/adminappaccept.jsp</result>
+       </action>
+       
+       <action name="accept"   class="admin.accept">
+             <result name="input">/WEB-INF/Admin/adminappaccept.jsp</result>
+             <result name="accept">/WEB-INF/Admin/insupdeladmin.jsp</result>
+       </action>
+         
+       <action name="reject" method="reject" class="admin.accept">
+             <result name="input">/WEB-INF/Admin/adminappaccept.jsp</result>
+             <result name="reject">/WEB-INF/Admin/insupdeladmin.jsp</result>
+       </action>
+       
+       <action name="bankinfo"  class="admin.bankinfo">
+             <result name="input">/WEB-INF/Admin/Admin.jsp</result>
+             <result name="success">/WEB-INF/Admin/bankinfo.jsp</result>
+       </action>
+       
+       <action name="bankinfoback" method="bankinfoback"  class="admin.bankinfo">
+             <result name="input">/WEB-INF/Admin/bankinfo.jsp</result>
+             <result name="bankinfoback">/WEB-INF/Admin/Admin.jsp</result>
+       </action>
+       
+       <action name="managephoto"  method="managephoto" class="admin.mainclick">
+             <result name="input">/WEB-INF/Admin/Admin.jsp</result>
+             <result name="managephoto">/WEB-INF/Admin/Admineditview.jsp</result>
+       </action>
+       
+       <action name="admineditback"  method="admineditback" class="admin.mainclick">
+             <result name="input">/WEB-INF/Admin/Admineditview.jsp</result>
+             <result name="admineditback">/WEB-INF/Admin/Admin.jsp</result>
+       </action>
+             
+       <action name="adminedit"  class="admin.AdminEdit">
+             <result name="input">/WEB-INF/Admin/Admineditview.jsp</result>
+             <result name="adminedit">/WEB-INF/Admin/Adminedit.jsp</result>
+       </action>
+       
+       <action name="admininsert"  class="admin.Admininsert">
+             <result name="input">/WEB-INF/Admin/Admineditview.jsp</result>
+             <result name="admininsert">/WEB-INF/Admin/Admininsert.jsp</result>
+       </action>
+       
+       <action name="admininsertback" method="admininsertback"  class="admin.mainclick">
+             <result name="input">/WEB-INF/Admin/Admineditview.jsp</result>
+             <result name="admininsertback">/WEB-INF/Admin/Admineditview.jsp</result>
+       </action>
+       <action name="maninsert"  class="admin.Mngaccountinsert">
+             <result name="input">/WEB-INF/Admin/Admininsert.jsp</result>
+             <result name="maninsert">/WEB-INF/Admin/insupdeladmin.jsp</result>
+       </action>
+       
+       <action name="manupdate"  class="admin.Mngaccountup">
+             <result name="input">/WEB-INF/Admin/Adminedit.jsp</result>
+             <result name="mngupdate">/WEB-INF/Admin/insupdeladmin.jsp</result>
+       </action>
+            
+       <action name="mandelete"  method="mngdelete" class="admin.Mngaccountup">
+             <result name="input">/WEB-INF/Admin/Adminedit.jsp</result>
+             <result name="mngdelete">/WEB-INF/Admin/insupdeladmin.jsp</result>
+       </action>
+       
+       <action name="manback" method="mngback" class="admin.mainclick">
+             <result name="input">/WEB-INF/Admin/Adminedit.jsp</result>
+             <result name="mngback">/WEB-INF/Admin/Admin.jsp</result>
+       </action>
+       
+       <action name="Gobackadmin"  method="gobackadmin" class="admin.mainclick">
+             <result name="input">/WEB-INF/Admin/insupdeladmin.jsp</result>
+             <result name="gobackadmin">/WEB-INF/Admin/Admin.jsp</result>
+       </action>
+       
+       <action name="logoutadmin"  class="admin.Adminlogout">
+             <result name="input">/WEB-INF/Admin/Admin.jsp</result>
+             <result name="success">/WEB-INF/Admin/adminlogout.jsp</result>
+       </action>
+      
+      
+      
+      
+      
+      
+      <!-- **********for employee only ***********-->
+       <action name="passview" method="passview" class="emp.click">
+             <result name="input">/WEB-INF/employee/employee.jsp</result>
+             <result name="passview">/WEB-INF/employee/passchange.jsp</result>
+       </action>
+        
+       <action name="emppassword"  class="emp.emppassword">
+             <result name="input">/WEB-INF/employee/passchange.jsp</result>
+             <result name="success">/WEB-INF/employee/updel.jsp</result>
+       </action>
+        
+       <action name="passback" method="passwordback" class="emp.click">
+             <result name="input">/WEB-INF/employee/passchange.jsp</result>
+             <result name="passwordback">/WEB-INF/employee/employee.jsp</result>
+       </action>
+        
+        <action name="deposit" method="deposit" class="emp.click">
+             <result name="input">/WEB-INF/employee/employee.jsp</result>
+             <result name="deposit">/WEB-INF/employee/Deposit.jsp</result>
+        </action>
+        
+        <action name="depositback" method="depositback" class="emp.click">
+             <result name="input">/WEB-INF/employee/Deposit.jsp</result>
+             <result name="depositback">/WEB-INF/employee/employee.jsp</result>
+        </action>
+        
+        <action name="depositconfirm" class="emp.Deposit">
+             <result name="input">/WEB-INF/employee/Deposit.jsp</result>
+             <result name="success">/WEB-INF/employee/updel.jsp</result>
+        </action>
+                
+        <action name="view"  class="emp.EmpView">
+             <result name="input">/WEB-INF/employee/employee.jsp</result>
+             <result name="success">/WEB-INF/employee/empview.jsp</result>
+        </action>
+        
+        <action name="empviewback" method="empviewback" class="emp.EmpView">
+             <result name="input">/WEB-INF/employee/empview.jsp</result> 
+             <result name="empviewback">/WEB-INF/employee/employee.jsp</result>
+        </action>
+        
+        <action name="manageclient" method="empeditview" class="emp.click">
+             <result name="input">/WEB-INF/employee/employee.jsp</result>
+             <result name="empeditview">/WEB-INF/employee/empeditview.jsp</result>
+        </action>
+        
+        <action name="empeditviewback" method="empeditviewback" class="emp.click">
+             <result name="input">/WEB-INF/employee/empeditview.jsp</result>
+             <result name="empeditviewback">/WEB-INF/employee/employee.jsp</result>
+        </action>
+        
+        <action name="empedit"  class="emp.EmpEdit">
+             <result name="input">/WEB-INF/employee/empeditview.jsp</result>
+             <result name="empedit">/WEB-INF/employee/empedit.jsp</result>
+        </action>
+              
+        <action name="update"  class="emp.Clientaccountup">
+             <result name="input">/WEB-INF/employee/empedit.jsp</result>
+             <result name="clntupdate">/WEB-INF/employee/updel.jsp</result>
+        </action>
+         
+        <action name="delete" method="delete" class="emp.Clientaccountup">
+             <result name="input">/WEB-INF/employee/empedit.jsp</result>
+             <result name="clntdelete">/WEB-INF/employee/updel.jsp</result>
+        </action>
+        
+        <action name="Gobackemp"  method="gobackemp" class="emp.click">
+             <result name="input">/WEB-INF/employee/updel.jsp</result>
+             <result name="gobackemp">/WEB-INF/employee/employee.jsp</result>
+        </action>
+        
+        <action name="empeditback" method="empeditback" class="emp.click">
+             <result name="input">/WEB-INF/employee/empedit.jsp</result>
+             <result name="empeditback">/WEB-INF/employee/employee.jsp</result>
+        </action>
+         
+        <action name="applist" class="emp.click">
+             <result name="input">/WEB-INF/employee/employee.jsp</result>
+             <result name="success">/WEB-INF/employee/applist.jsp</result>
+        </action>
+         
+        <action name="applistback" method="applistback" class="emp.click">
+             <result name="input">/WEB-INF/employee/applist.jsp</result>
+             <result name="applistback">/WEB-INF/employee/employee.jsp</result>
+        </action>
+                  
+        <action name="extveri" class="emp.Extverify">
+             <result name="input">/WEB-INF/employee/applist.jsp</result>
+             <result name="success">/WEB-INF/employee/extverify.jsp</result>
+        </action>
+                 
+        <action name="forward"  class="emp.Forwardapp">
+             <result name="input">/WEB-INF/employee/extverify.jsp</result>
+             <result name="success">/WEB-INF/employee/updel.jsp</result>
+        </action>
+         
+        <action name="extverifyback" method="extverifyback" class="emp.click">
+             <result name="input">/WEB-INF/employee/extverify.jsp</result>
+             <result name="extverifyback">/WEB-INF/employee/employee.jsp</result>
+        </action>
+        
+        <action name="logoutemp"   class="emp.Logoutemp">
+             <result name="input">/WEB-INF/employee/employee.jsp</result>
+             <result name="success">/WEB-INF/employee/logoutemp.jsp</result>
+        </action>
+         
+         
+         
+         
+         
+         
+       <!-- **********for user********** -->
+        <action name="loginclient"   class="Home.login">
+             <result name="input">/home.jsp</result>
+             <result name="success">/WEB-INF/client/User.jsp</result>
+        </action>
+        
+        <action name="logoutclient"   class="client.Logoutclient">
+             <result name="input">/WEB-INF/client/User.jsp</result>
+             <result name="success">/WEB-INF/client/clientlogout.jsp</result>
+        </action>
+        
+        <action name="clientpass" method="clientpass" class="client.clientclick">
+             <result name="input">/WEB-INF/client/User.jsp</result>
+             <result name="clientpass">/WEB-INF/client/clientpass.jsp</result>
+        </action>
+        
+        <action name="clientpassback" method="clientpassback" class="client.clientclick">
+             <result name="input">/WEB-INF/client/clientpass.jsp</result>
+             <result name="clientpassback">/WEB-INF/client/User.jsp</result>
+        </action>
+        
+        <action name="clientpasschange"  class="client.clientpass">
+             <result name="input">/WEB-INF/client/clientpass.jsp</result>
+             <result name="success">/WEB-INF/client/transrew.jsp</result>
+        </action>
+        
+        <action name="ftrans"   class="client.clientclick">
+             <result name="input">/WEB-INF/client/User.jsp</result>
+             <result name="fundtrans">/WEB-INF/client/FundTrans.jsp</result>
+        </action>
+        
+        <action name="transfer"   class="client.fundtrans">
+             <result name="input">/WEB-INF/client/FundTrans.jsp</result>
+             <result name="success">/WEB-INF/client/transrew.jsp</result>
+        </action>
+        
+        <action name="fundtransback" method="fundtransback"   class="client.clientclick">
+             <result name="input">/WEB-INF/client/FundTrans.jsp</result>
+             <result name="fundtransback">/WEB-INF/client/User.jsp</result>
+        </action>
+        
+        <action name="clientinfo"  class="client.clientview">
+             <result name="input">/WEB-INF/client/User.jsp</result>
+             <result name="success">/WEB-INF/client/clientview.jsp</result>
+        </action>
+        
+        <action name="clientviewback"  method="clientviewback" class="client.clientview">
+             <result name="input">/WEB-INF/client/clientview.jsp</result>
+             <result name="clientviewback">/WEB-INF/client/User.jsp</result>
+        </action>
+        
+        <action name="reward" method="reward"   class="client.clientclick">
+             <result name="input">/WEB-INF/client/User.jsp</result>
+             <result name="reward">/WEB-INF/client/rewards.jsp</result>
+        </action>
+        
+        <action name="move" method="rewardmove"   class="client.clientclick">
+             <result name="input">/WEB-INF/client/rewards.jsp</result>
+             <result name="rewardmove">/WEB-INF/client/benefit.jsp</result>
+        </action>
+        
+        <action name="confirm"   class="client.rewards">
+             <result name="input">/WEB-INF/client/benefit.jsp</result>
+             <result name="success">/WEB-INF/client/transrew.jsp</result>
+             <result name="failure">/WEB-INF/client/transrew.jsp</result>
+        </action>
+        
+        <action name="transrewback" method="transrewback"  class="client.clientclick">
+             <result name="input">/WEB-INF/client/transrew.jsp</result>
+             <result name="transrewback">/WEB-INF/client/User.jsp</result>
+        </action>
+        
+        <action name="benefitback" method="benefitback"   class="client.clientclick">
+             <result name="input">/WEB-INF/client/benefit.jsp</result>
+             <result name="benefitback">/WEB-INF/client/User.jsp</result>
+        </action>
+        
+        <action name="translist" method="translist"   class="client.clientclick">
+             <result name="input">/WEB-INF/client/User.jsp</result>
+             <result name="translist">/WEB-INF/client/transaction.jsp</result>
+        </action>
+        
+        <action name="transcheck"    class="client.translist1">
+             <result name="input">/WEB-INF/client/transaction.jsp</result>
+             <result name="success">/WEB-INF/client/transaction.jsp</result>
+        </action>
+        
+        <action name="translistback" method="translistback"  class="client.clientclick">
+             <result name="input">/WEB-INF/client/transaction.jsp</result>
+             <result name="translistback">/WEB-INF/client/User.jsp</result>
+        </action>
+    </package>
+</struts>

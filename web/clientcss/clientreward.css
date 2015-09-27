@@ -1,0 +1,148 @@
+
+
+body {
+margin: 0;
+	padding: 0;
+	line-height: 1.4em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #2a3c48;
+	background: #ffffff;
+}
+		
+
+/* header */
+
+
+/* banner */
+
+#templatemo_banner_wrapper {
+	clear: both;
+	width: 100%;
+	height: 200px;
+	background: url(/WebApplication7/userimages/templatemo_banner_repeat.jpg) repeat-x;
+}
+
+#templatemo_banner {
+	
+	width: 900px;
+	height: 180px;
+	padding: 20px;
+	margin: 0 auto;
+	background: url(/WebApplication7/userimages/templatemo_banner.jpg) no-repeat;
+}
+
+#templatemo_banner h2 {
+	
+	font-size: 28px;
+	font-weight: bold;
+	color: #fff;
+	
+}
+
+
+/* content */
+
+
+#templatemo_content {
+	width:900px;
+height:auto;
+margin:auto;
+	background: url(/WebApplication7/userimages/templatemo_content_top.jpg) top center no-repeat;
+}
+.content_section{
+ width:600px;
+margin-left: 100px;
+height: 670px;
+padding:5px 10px;   
+}
+.border_box{
+width:194px;
+height:auto;
+text-align:center;
+border:1px #6da6b1 solid;
+}
+.product_title{
+color:#ea2222;
+padding:5px 0 5px 0;
+font-weight:100;
+font-size:14px;
+}
+.product_img{
+padding:10px 10px 10px 30px;
+}
+.prod_price{
+padding:5px 0 5px 0;
+}
+
+span.price{
+color:#ea2222;
+font-size:12px;
+}
+
+/*-----center content----------*/
+
+.center_title_bar{
+width:520px;
+height:33px;
+float:left;
+padding:0 0 0 40px;
+margin:0 0 0 12px;
+_margin:0 0 0 6px;
+line-height:33px;
+font-size:13px;
+color:#000;
+font-weight:bold;
+background:#804040 url(../rewardimages/bar_bg.gif) no-repeat center;
+}
+/*---------prod_box----------*/
+.prod_box{
+width:173px;
+height:auto;
+float:left;
+padding:10px 10px 10px 11px;
+}
+.top_prod_box{
+width:173px;height:12px;background:url(../rewardimages/product_box_top.gif) no-repeat center bottom;float:left; padding:0px; margin:0px;
+}
+
+.center_prod_box{
+width:173px;height: auto;background:url(../rewardimages/product_box_center.gif) repeat-y;float:left; text-align:center;padding:0px; margin:0px;
+}
+.prod_details_tab{
+width:173px;
+height:31px;
+float:left;
+background:url(../rewardimages/products_details_bg.gif) no-repeat center;
+margin:3px 0 0 0;
+text-align:center;
+font-size:12px;
+}
+
+ 
+
+/* footer */
+
+#templatemo_footer_wrapper {
+	width: 100%;
+	margin: 0 auto;
+	height:70px;
+	padding: 30px 0;
+	background: url(/WebApplication7/userimages/templatemo_footer.jpg) repeat;
+}
+
+#templatemo_footer {
+	width: 900px;
+font-size:20px;
+	margin: 0 auto;
+	padding-top: 25px;
+	color: #ffffff;
+}
+
+
+
+
+/* end of footer */
+
+
+

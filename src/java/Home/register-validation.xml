@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+       "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+
+<validators>
+     <field name="cardtype">
+    <field-validator type="requiredstring">
+    <message>Card type is required</message>   
+    </field-validator>
+    
+       </field>
+    <field name="fname">
+    <field-validator type="requiredstring">
+    <message>First name is required</message>   
+    </field-validator>
+    <field-validator type="regex">
+            <param name="expression">^[A-Za-z ]{1,30}$ </param>
+            <message>Name can contain only characters</message>
+        </field-validator>
+   
+       </field>
+        
+    <field name="lname">
+    <field-validator type="requiredstring">
+    <message>Last name is required</message>   
+    </field-validator>  
+    <field-validator type="regex">
+            <param name="expression">^[A-Za-z]{1,30}$ </param>
+            <message>Name can contain only characters</message>
+        </field-validator>
+    </field>
+   
+     <field name="salu">
+    <field-validator type="requiredstring">
+    <message>Salutation required</message>   
+    </field-validator>         
+    </field>
+     
+     <field name="dob">
+    <field-validator type="required">
+    <message>Date Of Birth required</message>   
+    </field-validator>  
+     <field-validator type="date">
+  <param name="min">01/01/1945</param>
+  <param name="max">01/01/1995</param>
+  <message>Invalid Birth date</message>
+  </field-validator>
+    </field>
+        
+  
+   
+   <field name="city">
+   <field-validator type="requiredstring">
+    <message>Select City from list</message>   
+   </field-validator>         
+   </field>
+   
+    <field name="state">
+   <field-validator type="requiredstring">
+    <message>Select State from list</message>   
+   </field-validator>         
+   </field>
+   
+    <field name="country">
+   <field-validator type="requiredstring">
+    <message>Select Country from list</message>   
+   </field-validator>         
+   </field>
+   
+   
+   <field name="mobile">
+   <field-validator type="requiredstring">
+    <message> Mobile No. required</message>
+   </field-validator>
+    <field-validator type="regex">
+            <param name="expression">^[0-9]{10,10}$</param>
+            <message>Mobile No. format XXXXXXXXXX</message>
+        </field-validator>
+   </field>
+   
+   <field name="email">
+      <field-validator type="email">
+          <message>Invalid Email</message>
+      </field-validator>
+       <field-validator type="requiredstring">
+             <message>Email address is required</message>
+        </field-validator>
+        </field>
+        <field name="sex">
+   <field-validator type="requiredstring">
+    <message> Sex is required</message>
+   </field-validator>
+   </field>
+   <field name="status">
+   <field-validator type="requiredstring">
+    <message> Marital status is required</message>
+   </field-validator>
+   </field>
+
+    <field name="door">   
+   <field-validator type="requiredstring">
+    <message>Door No. required</message>   
+   </field-validator>
+    </field>
+
+    
+     <field name="pan">   
+      <field-validator type="requiredstring">
+    <message>Pan No. required</message>   
+   </field-validator>
+  <field-validator type="regex">
+             <param name="expression">^[A-Za-z0-9]{10}$</param>
+             <message>Please Enter correct pan no.</message>
+        </field-validator>
+    </field>
+    
+    <field name="lmark">   
+   <field-validator type="requiredstring">
+    <message>Landmark is required</message>   
+   </field-validator>
+    </field>
+    
+    <field name="zip">   
+   <field-validator type="requiredstring">
+    <message>Zip Code required</message>   
+   </field-validator>
+    <field-validator type="regex">  
+   <param name="expression">^[0-9]{6,6}$</param>  
+   <message>Invalid Zip Code</message>  
+ </field-validator>  
+    </field>
+  
+</validators>

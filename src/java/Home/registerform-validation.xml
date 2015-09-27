@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+       "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+  <field name="prof">
+      <field-validator type="requiredstring">
+          <message>Select Profession from list</message>
+      </field-validator></field>
+       
+    
+        
+        <field name="empName">
+        <field-validator type="requiredstring">
+            <message>Enter ur Name</message>
+        </field-validator>  
+        <field-validator type="regex">
+            <param name="expression">^[A-Za-z ]{1,30}$ </param>
+            <message>Name can contain only characters</message>
+        </field-validator>
+        </field>
+       
+       
+        <field name="empId">
+        <field-validator type="requiredstring">
+            <message>Emplyee Id required</message>
+        </field-validator>    
+        </field>
+       
+       
+       <field name="offNo">
+      <field-validator type="requiredstring">
+          <message>Phone no. required.</message>
+      </field-validator>
+      <field-validator type="regex">
+            <param name="expression">^[0-9]{10,10}$</param>
+            <message>Phone number format XXXXXXXXXX</message>
+        </field-validator>
+  </field>
+  
+    <field name="dateJoin">
+       <field-validator type="required">
+      <message>Date of Joining required!</message>
+        </field-validator>
+        <field-validator type="date">
+  <param name="min">01/01/1970</param>
+  <param name="max">01/01/2011</param>
+  <message>Date Of Joining must be supplied between ${min} and ${max}</message>
+  </field-validator>
+       </field>
+       
+       <field name="compAdd">
+        <field-validator type="requiredstring">
+            <message>Company Address required</message>
+        </field-validator>    
+        </field>
+       
+    <field name="faxNo">
+       <field-validator type="requiredstring">
+      <message>Fax No. required!</message>
+        </field-validator>
+        <field-validator type="regex">
+           <param name="expression">^[0-9]{8,15}$</param>
+             <message>Invalid Fax No.</message>
+        </field-validator>
+        
+        </field>
+        
+          <field name="email">
+        <field-validator type="requiredstring">
+            <message>Email is required</message>
+        </field-validator>
+          <field-validator type="email">
+            <message>Invalid Email</message>
+        </field-validator>
+        </field>
+       
+    <field name="nameCard">
+       <field-validator type="requiredstring">
+      <message>Name is required!</message>
+        </field-validator>
+        <field-validator type="regex">
+            <param name="expression">^[A-Za-z ]{1,15}$ </param>
+            <message>Name can contain only characters</message>
+        </field-validator>
+        </field>
+        
+      
+       
+   
+  
+  </validators>
+
+
+

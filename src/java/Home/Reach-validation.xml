@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+        "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+        "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+  <field name="myemail">
+      <field-validator type="email">
+          <message>Not a valid email address!</message>
+      </field-validator>
+       <field-validator type="requiredstring">
+             <message>Email address is required!</message>
+        </field-validator>
+        </field>
+        
+         <field name="myname">
+        <field-validator type="requiredstring">
+            <message>Enter your name please!</message>
+        </field-validator>  
+         <field-validator type="regex">
+            <param name="expression">^[A-Za-z ]{1,30}$ </param>
+            <message>Name can contain only characters</message>
+        </field-validator>
+        </field>
+        
+        <field name="mytelephone">
+      <field-validator type="requiredstring">
+          <message>Phone number is required!</message>
+      </field-validator>
+      <field-validator type="regex">
+            <param name="expression">^[0-9]{10,10}$</param>
+            <message>Phone number format XXXXXXXXX</message>
+        </field-validator>
+  </field>
+  </validators>

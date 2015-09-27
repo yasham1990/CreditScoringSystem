@@ -1,0 +1,86 @@
+
+#main_content{
+	text-align:center;
+
+padding:0;
+font-family:Arial, Helvetica, sans-serif;
+font-size:11px;
+margin:0px auto auto auto;
+color:#000;
+	width: 600px;
+	height:670px;
+	
+}
+/*Center design....*/
+
+.border_box{
+width:194px;
+height:auto;
+text-align:center;
+border:1px #6da6b1 solid;
+}
+.product_title{
+color:#ea2222;
+padding:5px 0 5px 0;
+font-weight:100;
+font-size:14px;
+}
+.product_img{
+padding:10px 10px 10px 30px;
+}
+.prod_price{
+padding:5px 0 5px 0;
+}
+
+span.price{
+color:#ea2222;
+font-size:12px;
+}
+
+/*-----center content----------*/
+.center_content{
+width:585px;
+float:none;
+padding:5px 10px;
+}
+.center_title_bar{
+width:520px;
+height:33px;
+float:left;
+padding:0 0 0 40px;
+margin:0 0 0 12px;
+_margin:0 0 0 6px;
+line-height:33px;
+font-size:13px;
+color:#000;
+font-weight:bold;
+background:#804040 url(../rewardimages/bar_bg.gif) no-repeat center;
+}
+/*---------prod_box----------*/
+.prod_box{
+width:173px;
+height:auto;
+float:left;
+padding:10px 10px 10px 11px;
+}
+.top_prod_box{
+width:173px;height:12px;background:url(../rewardimages/product_box_top.gif) no-repeat center bottom;float:left; padding:0px; margin:0px;
+}
+
+.center_prod_box{
+width:173px;height: auto;background:url(../rewardimages/product_box_center.gif) repeat-y;float:left; text-align:center;padding:0px; margin:0px;
+}
+.prod_details_tab{
+width:173px;
+height:31px;
+float:left;
+background:url(../rewardimages/products_details_bg.gif) no-repeat center;
+margin:3px 0 0 0;
+text-align:center;
+font-size:12px;
+}
+
+
+
+
+

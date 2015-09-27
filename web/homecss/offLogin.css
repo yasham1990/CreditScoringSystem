@@ -1,0 +1,134 @@
+body {
+background:url(../offlogin/backmain.jpg) ;
+
+font: 10px  verdana, arial, helvetica;
+color:#000;
+} 
+
+#main_container{
+
+width:auto;
+height:auto;
+
+
+}
+
+
+#header{
+width:865px;
+height:200px;
+margin:auto;
+
+}
+#logo{
+height:200px;
+width:285px;
+float:left;
+}
+#logo img{
+padding-top:15px;
+
+}
+
+
+
+
+
+/*-----------------main content----------------------------*/
+.main_content{
+width:865px;
+min-height: 400px;
+margin:auto;
+padding:0 0 30px 0;
+background:inherit;
+}
+fieldset.row1{
+margin-bottom:15px;
+height:auto;
+width:450px;
+margin-left:200px;
+}
+fieldset.row11{
+margin-bottom:15px;
+height:auto;
+width:520px;
+margin-left:200px;
+}
+legend{
+    font-size: 22px;
+}
+td{
+    
+    font-size: 16px;
+    padding-left: 25px;
+    padding-top: 5px;
+    
+}
+.button
+{
+    background: #000;
+    padding: 10px 8px 5px;
+    color: #FFF;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    cursor: pointer;
+    float:left;
+    font-size:18px;
+   margin-top: 20px;
+    margin-left: 100px;
+ 
+}
+.buttonapp
+{
+    background: #000;
+    padding: 10px 8px 5px;
+    color: #FFF;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    cursor: pointer;
+    float:left;
+    font-size:18px;
+   margin-top: 20px;
+    margin-left: 200px;
+ 
+}
+
+
+/* Footer */
+#templatemo_footer_wrapper {
+	width: auto;
+		
+        height: 100px;
+	background: url(../offlogin/templatemo_footer.jpg) repeat;
+}
+
+#footer {
+	clear: both;
+	
+	color: #FFFFFF;
+}
+
+#footer p {
+margin: 0;
+	text-align: center;
+	line-height: normal;
+	font-size:16px;
+	color:#FFF;
+}
+
+#footer a {
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+#footer a:hover {
+	text-decoration: none;
+}

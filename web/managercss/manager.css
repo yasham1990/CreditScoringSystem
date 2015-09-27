@@ -1,0 +1,150 @@
+body {
+background:url(/WebApplication7/managerimages/bg.gif) repeat-x top #e8dec4;
+margin:0px;
+padding:0px;
+font: 10px  verdana, arial, helvetica;
+color:#000;
+}
+p{
+text-align:justify;
+line-height:15px;
+padding:0px 0 5px 0;
+}
+ p.welc{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.clear{
+clear:both;
+}
+#main_container{
+width:900px;
+height:auto;
+margin:auto;
+
+}
+.center_content{
+width:865px;
+padding:0px;
+margin:auto;
+}
+#header{
+width:865px;
+height:200px;
+margin:auto;
+
+}
+#logo{
+height:200px;
+width:285px;
+float:left;
+}
+#logo img{
+padding-top:15px;
+padding-left:40px;
+}
+#logo h1 {
+	padding-top:10px;
+	margin:0px;
+	padding-left:20px;
+	font-size: 3em;
+	color:#000;
+}
+#logo1{
+		
+	height:200px;
+width:580px;
+
+float:right;
+}
+
+
+table {
+		   
+ background-color:inherit;
+ border-style:ridge;  
+  color: #000000;  
+ 
+}
+td {    
+      font-size:18px;   
+      padding-left: 2px;
+	  padding-bottom:20px;    
+    }  
+
+
+/*-----------------main content----------------------------*/
+.main_content{
+width:865px;
+height:auto;
+margin:auto;
+padding:0 0 30px 0;
+background:inherit;
+}
+.main_content_top{
+width:865px;
+height:16px;
+background:url(/WebApplication7/managerimages/main_content_top.gif) no-repeat center top;
+}
+#boxes_content{
+width:865px;
+clear:both;
+margin:auto;
+}
+.box{
+padding:10px 10px 10px 16px;float:left;}
+.box_content{
+background:url(/WebApplication7/managerimages/box_bg.gif) no-repeat center;width:259px;height:202px;
+}
+
+.boxtitle{
+font-size:18px;
+color:#fff;
+padding:10px 0 0 15px;
+font-family:Arial, Helvetica, sans-serif;
+}
+.box_icon{
+clear:both;
+float:left;
+width:80px;
+padding:25px 0 0 15px;
+}
+p.text_content{
+width:135px;
+float:left;
+text-align:left;
+padding:5px 10px 0 15px;
+color:#fff;
+line-height:15px;
+}
+a.read_more{
+padding:10px 0 0 0;
+}
+
+.title{
+font-size:18px;
+color:#000000;
+padding:10px 0 0 0px;
+font-family:Arial, Helvetica, sans-serif;
+}
+#log{float:right;}
+
+
+
+
+/*-----------------------------footer------------------*/
+#footer{
+
+width: 865px;
+height: 100px;
+}
+ #data h1{
+	 padding-left:250px;
+	  padding-top:30px;
+	color: #000;
+
+}
+
+
+
+
